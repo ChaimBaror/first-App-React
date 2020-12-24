@@ -1,0 +1,30 @@
+
+GET http://localhost:4444/user/477183f2ff2a85c9 HTTP/1.1
+
+###
+
+POST  http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+  "email": "rfdfd@gmail.com",
+  "firstName": "ddfdfd",
+  "lastName": "Shker"
+}
+
+###
+
+PATCH http://localhost:4444/user/477183f2ff2a85c9 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "chaim",
+      "lastName": "baaa",
+  "profilePicture": "https://i.stack.imgur.com/Bb6z1.jpg?s=64&g=1"
+}
+
+###
+
+DELETE http://localhost:3000/user/be7d2dfec48c6091 HTTP/1.1
+
+###
